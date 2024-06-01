@@ -25,7 +25,7 @@ class Main:
                 print(f"Downloaded: {ytObject.title}")
             except Exception as e:
                 print(f"Error: {e}")
-            print("Download Complete")
+            self.finishedLabel.configure("Gownloaded!")
         else:
             print("Enter Valid link")
 
@@ -47,6 +47,9 @@ class Main:
         self.url_var = tkinter.StringVar()
         link = customtkinter.CTkEntry(self.app, width=350, height=20, textvariable=self.url_var)
         link.pack(padx=10, pady=10)
+
+        self.finishedLabel = customtkinter.CTkLabel(self.app, text="")
+        self.finishedLabel.pack()
 
         # Download button
         download = customtkinter.CTkButton(self.app, text="Download", command=self.startDownload)
