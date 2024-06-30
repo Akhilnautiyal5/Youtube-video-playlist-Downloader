@@ -18,7 +18,7 @@ class Main:
         output_folder = os.path.join(os.path.expanduser("~"), "Videos", "yt_playlist")
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)  # Create the directory if it doesn't exist
-        print("Start download for URL:", ytLink)
+        print("Starting download for URL:", ytLink)
 
             # Regular expression to check if the URL is a valid YouTube link
         youtube_regex = re.compile(
@@ -36,14 +36,18 @@ class Main:
                 self.finishedLabel.configure(text=f"Error: {e}", text_color="red")
 
             self.finishedLabel.configure(text=f"Downloaded video: {ytObject.title}", text_color="white")       
+            print(f"Downloaded video: {ytObject.title}")       
         else:
             self.finishedLabel.configure(text="Enter Valid link", text_color="red")
+
+        
 
 
     def on_progress(self, stream, byte_remaining):
         total_size = stream.filesize
         bytes_downloaded = total_size - byte_remaining
         percentage_of_completion = int((bytes_downloaded / total_size) * 100)
+        
         # percent = (str)(int(percentage_of_completion))
         self.pPercentage.configure(text=f"{percentage_of_completion}%")
         self.pPercentage.update()
