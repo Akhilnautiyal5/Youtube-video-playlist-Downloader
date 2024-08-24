@@ -1,8 +1,8 @@
-Youtube Video Playlist Downloader (Gui and Terminal Based)
+Youtube Video Playlist Downloader
 =================================
 
 Created youtube video downloader for Windows to download YouTube videos or playlists in any resolution through a link.
-there are two versions: Gui based (v1) and Terminal based (v2)
+<!--There are two versions: Gui based (v1) and Terminal based (v2) -->
 
 Table of Contents
 -----------------
