@@ -30,7 +30,7 @@ Follow these steps to set up and run the application on your Windows machine:
 1.  **Clone the Repository**
     
     ```bash
-    git clone https://github.com/yourusername/Youtube-video-playlist-Downloader.git
+    git clone https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader.git
     cd Youtube-video-playlist-Downloader
     ```
     
@@ -66,9 +66,8 @@ Follow these steps to set up and run the application on your Windows machine:
 Screenshots
 -----------
 
-_Include screenshots of the application interface here to help users understand how it looks and operates._
+![image](https://github.com/user-attachments/assets/57204fa8-a4d6-4e77-93fb-5d5b86dea071)
 
-![Screenshot1](screenshots/screenshot1.png) ![Screenshot2](screenshots/screenshot2.png)
 
 Contributing
 ------------
